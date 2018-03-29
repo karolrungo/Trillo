@@ -1,0 +1,41 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "Landing page for trillo",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rungokarol/Trillo.git"
+  },
+  "author": "Karol Rungo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rungokarol/Trillo/issues"
+  },
+  "homepage": "https://github.com/rungokarol/Trillo/",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gh-pages": "^1.1.0",
+    "gulp-htmlmin": "^4.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}
