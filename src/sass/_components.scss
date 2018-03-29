@@ -1,0 +1,50 @@
+.logo{
+    height: 3.25rem;
+}
+
+.search{
+    &__input{
+
+    }
+
+    &__button{
+
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.user-nav{
+    display: flex;
+    flex-direction: row;
+
+    &__icon_box{
+
+    }
+
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &____notification{
+
+    }
+
+    &__user{
+
+    }
+
+    &__user-photo{
+        height: 3.75rem;
+        width: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name{
+
+    }
+}
