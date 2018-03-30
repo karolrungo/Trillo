@@ -35,6 +35,9 @@ var config = {
   jsreplaceout: 'js/script.js',
   fontsIn: 'src/css/fonts/**/*',
   fontsOut: 'dist/css/fonts',
+  svgIn: 'src/img/**/*.svg',
+  svgOut: 'dist/img/',
+  
 };
 
 gulp.task('reload', function() {
@@ -108,12 +111,18 @@ gulp.task('fonts', function() {
             .pipe(gulp.dest(config.fontsOut));
 });
 
+gulp.task('svg', function() {
+  return gulp.src(config.svgIn)
+          .pipe(gulp.dest(config.svgOut));
+});
+
+
 gulp.task('clean', function() {
   return del([config.dist]);
 });
 
 gulp.task('build', function() {
-  sequence('clean', ['html', 'js', 'css', 'img', 'fonts']);
+  sequence('clean', ['html', 'js', 'css', 'img', 'fonts', 'svg']);
 });
 
 gulp.task('default', ['serve']);
