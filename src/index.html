@@ -17,7 +17,16 @@
         <header class="header">
             <img src="img/logo.png" alt="logo" class='logo'>
             <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search hotels">
+                <input type="text" class="search__input" placeholder="Search hotels" list="cityname">
+                <datalist id="cityname">
+                    <option value="Boston">
+                    <option value="Warsaw">
+                    <option value="Wroclaw">
+                    <option value="Rome">
+                    <option value="Barcelona">
+                    <option value="Budapest">
+                    <option value="Paris">
+                </datalist>
                 <button class="search__button">
                     <svg class="search__icon">
                         <use xlink:href='img/sprite.svg#icon-magnifying-glass'></use>
