@@ -85,6 +85,24 @@
         position: relative;
     }
 
+
+    &-snackbar{
+      display: none;
+    }
+
+    &__icon-box:hover &-snackbar{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #fff;
+        background-color: var(--color-grey-dark-1);
+        width: 180%;
+        padding: 1rem;
+    }
+
     &__icon{
         height: 2.25rem;
         width: 2.25rem;
@@ -155,8 +173,6 @@
         width: 100%;
         z-index: 20;
     }
-
-
 }
 
 .side-nav{
