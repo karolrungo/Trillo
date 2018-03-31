@@ -196,6 +196,10 @@
         @media only screen and(max-width: $bp-small){
             flex-direction: column;
         }
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1.1rem;
+        }
     
     }
 
@@ -380,13 +384,15 @@
         height: 1.25rem;
         margin-right: .7rem; 
         
-        //background-image: url('../img/chevron-thin-right.svg');
-        //background-size: cover;
+        background-image: url('../img/chevron-thin-right.svg');
+        background-size: cover;
 
-        background-color: var(--color-primary);
-        mask-image: url('../img/chevron-thin-right.svg');
-        mask-size: cover;
-
+        @supports (mask-image: url()){
+            background-color: var(--color-primary);
+            mask-image: url('../img/chevron-thin-right.svg');
+            mask-size: cover;
+            background-image: none;
+        }
     }
 }
 
