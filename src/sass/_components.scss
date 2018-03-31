@@ -10,6 +10,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-smallest){
+        order: 1;
+        flex: 0 0 70%;
+        margin: auto;
+    }
+
     &__input{
         font-family: inherit;
         font-size: inherit;
@@ -120,6 +126,12 @@
     flex-direction: column;
     align-items: stretch;
 
+    @media only screen and(max-width: $bp-medium){
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+
     &__item{
         position: relative;
 
@@ -127,6 +139,13 @@
             margin-bottom: .5rem;
         }
 
+        @media only screen and(max-width: $bp-medium){
+            flex: 1;
+            
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__item::before{
@@ -168,6 +187,16 @@
 
         position: relative;
         z-index: 10;
+
+        @media only screen and(max-width: $bp-medium){
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and(max-width: $bp-small){
+            flex-direction: column;
+        }
+    
     }
 
     &__icon{
@@ -175,6 +204,12 @@
         width: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and(max-width: $bp-small){
+            margin-right: 0;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
     }
 }
 
@@ -183,6 +218,10 @@
     text-align: center;
     color: var(--color-grey-light-4);
     padding: 2.5rem;
+
+    @media only screen and(max-width: $bp-medium){
+        display: none;
+    }
 
 }
 
@@ -206,6 +245,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and(max-width: $bp-small){
+            font-size: 1.5rem;
+            padding:  1.23rem 2rem;
+        }
     }
 
     &__stars{
@@ -241,6 +285,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and(max-width: $bp-small){
+            padding:  0rem 1.5rem;
+        }
     }
 
     &__rating-averange{
@@ -356,8 +404,12 @@
         box-sizing: content-box;
         
         &:not(:last-child){
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
+    }
+
+    &__friends{
+        display: flex;
     }
 
     &__count{
@@ -372,6 +424,15 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+
+    @media only screen and(max-width: $bp-medium){
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    @media only screen and(max-width: $bp-small){
+        width: 100%;
+    }
 
     &::before{
         content: '\201c';
@@ -429,6 +490,10 @@
 .cta{
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and(max-width: $bp-medium){
+        padding: 2.5rem 0;
+    }
 
     &__book-now{
         font-size: 1.5rem;
