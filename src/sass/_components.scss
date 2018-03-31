@@ -113,6 +113,50 @@
         border-radius: 50%;
         margin-right: 1rem;
     }
+
+    &__user{
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__user-list{
+        list-style: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+
+    &__user-item{
+        flex: 0 0 100%;
+        background-color: var(--color-primary);
+        display: inline-block;
+        padding: 1rem;
+
+        &:not(:last-child)
+        {
+            border-bottom: 1px solid #fff;
+        }
+
+        &:hover{
+            background-color: var(--color-primary-light);
+        }
+    }
+
+    &__user-link:link,
+    &__user-link:visited{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__user:hover &__user-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 20;
+    }
+
+
 }
 
 .side-nav{
